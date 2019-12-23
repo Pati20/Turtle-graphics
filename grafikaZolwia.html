@@ -1,0 +1,81 @@
+<!--//autor: Patrycja Paradowska-->
+<!--//nr indexu: 244952-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grafika Zolwia</title>
+</head>
+<body>
+<h2 class="text_center" style="color: brown">GRAFIKA ŻÓŁWIA</h2>
+<div style="display: flex">
+    <section class="graphic_template2">
+        <canvas id="turtleGraphic" width="800" height="500" style="border:1px solid #c3c3c3;">
+            Twoja przegladarka nie obsluguje canvas.
+        </canvas>
+    </section>
+    <section class="action_buttons" style="color: #7b0063">
+        <h4>
+            Akcja rozgrywa się na planszy obok.
+            W okienku tekstowym użytkownik może wpisywać interaktywnie polecenia
+            dla żółwia na ekranie.
+            Lista dostępnych poleceń:
+        </h4>
+        FORWARD <i>+ długość</i><br>
+        BACK <i> + długość</i><br>
+        RIGHT <i>+ kąt</i><br>
+        LEFT <i>+ kąt</i><br>
+        COLOR <i>RED, GREEN, YELLOW, BLUE, ORANGE</i><br><br>
+        <div class="instructions">
+            <textarea rows="8" cols="90" id="instructionsList"></textarea>
+            <input class="submit_button" type='submit' value='RUN' onclick='uruchom()'>
+        </div>
+        <p>
+            <input class="submit_button" type='submit' value='CLEAR' onclick='wyczysc()'>
+        </p>
+Przykład rysowania trójkąta:
+        <br>START
+        FORWARD 100
+        LEFT 120
+        FORWARD 100
+        LEFT 120
+        FORWARD 100
+        LEFT 120
+        FORWARD 100
+        COLOR BLUE
+        END
+    </section>
+</div>
+
+<script src="skrypt.js"></script>
+</body>
+</html>
+<style>
+    body {
+        background: #00b4d9;
+    }
+    canvas {
+        background: #b2f1ff;
+    }
+    .submit_button{
+        background-color: white;
+        border: gray 1px solid;
+        color: black;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 8px;
+        cursor: pointer;
+    }
+    .action_buttons{
+        margin-left: 50px;
+    }
+    .instructions{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+</style>

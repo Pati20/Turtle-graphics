@@ -1,0 +1,56 @@
+<!--//autor: Patrycja Paradowska-->
+<!--//nr indexu: 244952-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logo Examples</title>
+</head>
+<body>
+<h2 class="text_center" style="color: brown">RYSUNKI DEMONSTRACYJNE</h2>
+<h3 class="text_center">Zaimplementowany program tworzy rysunki kilku wielokątów w różnych kolorach.</h3>
+<section class="graphic_template">
+    <canvas id="turtleGraphic" width="800" height="500"
+            style="border:1px solid #c3c3c3;">
+        Twoja przeglądarka nie obsluguje canvas.
+    </canvas>
+</section>
+
+
+<script src="skrypt.js"></script>
+<script>
+    komendyDlaZolwia=[
+        'START', 'LEFT 90', 'FORWARD 100', 'LEFT 60', 'FORWARD 100', 'LEFT 60', 'FORWARD 100', 'LEFT 60', 'FORWARD 100',
+        'LEFT 60', 'FORWARD 100', 'LEFT 60', 'FORWARD 100', 'BACK 100', 'COLOR RED', 'END'
+         ,'START', 'RIGHT 90', 'FORWARD 100', 'RIGHT 72', 'FORWARD 100', 'RIGHT 72', 'FORWARD 100', 'RIGHT 72',
+         'FORWARD 100', 'RIGHT 72', 'FORWARD 100', 'RIGHT 72', 'FORWARD 100', 'COLOR BLUE', 'END',
+        'START', 'FORWARD 100', 'LEFT 120', 'FORWARD 100', 'LEFT 120', 'FORWARD 100', 'LEFT 120',
+        'FORWARD 100', 'COLOR GREEN', 'END',
+        'START', 'FORWARD 50', 'RIGHT 90', 'FORWARD 150', 'RIGHT 90', 'FORWARD 50', 'RIGHT 90', 'FORWARD 150', 'BACK 150',
+        'COLOR ORANGE', 'END']
+    uruchomProgram(komendyDlaZolwia)
+
+</script>
+</body>
+</html>
+<style>
+    body {
+        background: #00b4d9;
+    }
+    canvas {
+        background: #b2f1ff;
+    }
+</style>
+
+<style>
+    .graphic_template{
+        justify-content: left;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .text_center{
+        text-align:left;
+    }
+</style>
